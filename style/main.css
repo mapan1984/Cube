@@ -1,0 +1,9 @@
+.content {
+  margin: 50px auto;
+}
+
+canvas {
+  display: block;
+  margin: 0px auto;
+  background: #0f0f0f;
+}
