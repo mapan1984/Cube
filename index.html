@@ -8,7 +8,41 @@
 <body>
   <div class="content">
     <canvas id="map" width="450px" height="450px"></canvas>
+
+    <p>旋转设置:</p>
+    <div id="input">
+      <div>
+          <input type="range" id="angleX" name="angleX"
+                   min="-180" max="180" list="xtickmarks">
+          <datalist id="xtickmarks">
+            <option value="-180" label="-180"></option>
+            <option value="0" label="0"></option>
+            <option value="180" label="180"></option>
+          </datalist>
+          <label for="angleX">绕 x 旋转</label>
+      </div>
+      <div>
+          <input type="range" id="angleY" name="angleY"
+                   min="-180" max="180" list="ytickmarks">
+          <datalist id="ytickmarks">
+            <option value="-180" label="-180"></option>
+            <option value="0" label="0"></option>
+            <option value="180" label="180"></option>
+          </datalist>
+          <label for="angleY">绕 y 旋转</label>
+      </div>
+      <div>
+          <input type="range" id="angleZ" name="angleZ"
+                   min="-180" max="180" list="ztickmarks">
+          <datalist id="ztickmarks">
+            <option value="-180" label="-180"></option>
+            <option value="0" label="0"></option>
+            <option value="180" label="180"></option>
+          </datalist>
+          <label for="angleZ">绕 z 旋转</label>
+      </div>
+    </div>
   </div>
-  <script src="./script/cube.js"></script>
+  <script type="module" src="./script/main.js"></script>
 </body>
 </html>
